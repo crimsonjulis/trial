@@ -114,7 +114,7 @@
     <canvas id="particle-canvas"></canvas>
 
     <div class="ui-layer">
-        <div class="title" id="main-title">Tap to send a Kiss</div>
+        <div class="title" id="main-title">Cmonnn ... gimme a kissie !😉</div>
         <div class="meter-container">
             <div class="meter-fill" id="meter"></div>
         </div>
@@ -124,16 +124,16 @@
     <div class="final-card" id="card">
         <div class="final-title">Happy Kiss Day 💋</div>
         <div class="final-text">
-            1340km is a long way,<br>
-            but my love travels instantly.<br><br>
-            Sending you a million of these<br>
-            until I can give you a real one.
+            Since I can’t do it right now in person,<br> I’m sending this to be that reminder. <br>Imagine a forehead kiss—soft, respectful, and promising that I’m right heree with youu. Alwaysss."<br>
+            And I misss youuu smmmmmmmmm...<br><br>
+            Sending you a googolplex of these 😘...<br>
+            until I can give you a real one😁
         </div>
-        <div style="font-size: 0.8rem; color: #aaa;">Irrespective of everything,<br>you are loved.</div>
+        <div style="font-size: 0.8rem; color: #aaa;">Irrespective of anything n everything,<br>letss alwayss stay togetherr...</div>
     </div>
 
     <audio id="bg-music" loop>
-        <source src="song.mp3" type="audio/mpeg">
+        <source src="kiss.mp3" type="audio/mpeg">
     </audio>
 
     <script>
@@ -145,7 +145,7 @@
         const audio = document.getElementById('bg-music');
         
         let kissCount = 0;
-        const targetKisses = 20; // Number of taps to win
+        const targetKisses = 25; // Number of taps to win
         let completed = false;
 
         // --- INTERACTION ---
@@ -208,9 +208,9 @@
             countText.innerText = Math.floor(percentage) + '% Kisses Sent';
 
             // Dynamic Title
-            if(percentage > 20) title.innerText = "Keep going! ❤️";
-            if(percentage > 50) title.innerText = "Sending Love... 🚀";
-            if(percentage > 80) title.innerText = "Almost there! 🌹";
+            if(percentage > 20) title.innerText = "Keep going!❤️ I need quite more cmonn 🥰";
+            if(percentage > 50) title.innerText = "Yayy...I can feel yourr lovee here! 🚀";
+            if(percentage > 80) title.innerText = "I don't wanna end it !! 😭";
 
             if(kissCount >= targetKisses) {
                 finish();
@@ -219,7 +219,7 @@
 
         function finish() {
             completed = true;
-            title.innerText = "Delivery Complete! 💌";
+            title.innerText = "I got each of em! 😤 and i absolutely lovedd itt !💌";
             title.classList.add('pulse-text');
             
             // Explosion of particles
